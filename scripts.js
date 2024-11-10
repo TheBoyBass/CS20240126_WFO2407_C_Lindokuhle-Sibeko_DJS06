@@ -78,3 +78,11 @@ products.forEach(product => console.log(product.product));
 
 const Long_products = products.filter(product => product.product.length > 5);
 console.log(Long_products);
+
+//Exercise 3
+// **Price Manipulation**: Filter out products without prices, convert string prices to numbers, and calculate the total price using `reduce`.
+
+const Price_products = products.filter(product => product.price !== '');
+const Price_numbers = Price_products.map(product => Number(product.price));
+const Total_price = Price_numbers.reduce((acc, price) => acc + price, 0);
+console.log(Total_price);
