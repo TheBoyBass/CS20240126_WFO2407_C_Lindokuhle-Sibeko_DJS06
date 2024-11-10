@@ -86,3 +86,16 @@ const Price_products = products.filter(product => product.price !== '');
 const Price_numbers = Price_products.map(product => Number(product.price));
 const Total_price = Price_numbers.reduce((acc, price) => acc + price, 0);
 console.log(Total_price);
+
+//Exercise 4
+// **Concatenate Product Names**: Use `reduce` to concatenate all product names into a single string.
+
+const Product_names = products.reduce((acc, product) => acc + product.product + ' ', '');
+console.log(Product_names);
+
+//Exercise 5
+//**Find Extremes in Prices**: Identify the highest and lowest-priced items, returning a string formatted as "Highest: X. Lowest: Y."
+
+const Highest_price = Math.max(...Price_numbers);
+const Lowest_price = Math.min(...Price_numbers);
+console.log(`Highest: ${Highest_price}, Lowest: ${Lowest_price}`);
