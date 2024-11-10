@@ -64,3 +64,17 @@ const Name_to_province = names.reduce((acc, name, index) => {
   return acc;
 }, {});
 console.log(Name_to_province);
+
+
+//Advanced Exercises (Single `console.log` Execution)
+
+//Ecercise 1
+//**Log Products**: Iterate over the products array, logging each product name.
+
+products.forEach(product => console.log(product.product));
+
+//Exercise 2
+//**Filter by Name Length**: Filter out products with names longer than 5 characters.
+
+const Long_products = products.filter(product => product.product.length > 5);
+console.log(Long_products);
