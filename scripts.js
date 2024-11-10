@@ -15,8 +15,17 @@ const products = [
 ]
 
 //Exercise 1
+//Use `forEach` to log each name and each province to the console
+
 names.forEach((name, index) => {
   console.log(name);
   console.log(provinces[index]);
   console.log(name, '(',provinces[index],')');
 });
+
+//Exercise 2
+
+//**Uppercase Transformation**: Use `map` to create a new array of province names in all uppercase. Log the new array to the console
+
+const Provinces_upper = provinces.map(province => province.toUpperCase());
+console.log(Provinces_upper);
