@@ -29,3 +29,10 @@ names.forEach((name, index) => {
 
 const Provinces_upper = provinces.map(province => province.toUpperCase());
 console.log(Provinces_upper);
+
+//Exercise 3
+//**Name Lengths**: Create a new array using `map` that contains the length of each name.
+
+const Name_length = names.map(name => name.length);
+console.log(Name_length);
+
